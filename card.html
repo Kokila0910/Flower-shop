@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Cart - Flower Bouquets</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      background:#f9fafb;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+    }
+  
+    .navbar {
+      background: rgb(107, 108, 108);
+    }
+    .navbar-brand {
+      margin: 10px;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #222 !important;
+    }
+    .cart-card{
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      background:#fff;
+      margin-bottom:20px;
+    }
+    .cart-img{
+      width:120px;height:100px;object-fit:cover;border-radius:12px;
+    }
+    .price{font-weight:700;color:#d6336c}
+    .head{
+      text-align:center;
+      color:#000;
+      font-family:fantasy;
+      padding:20px;
+    }
+    .checkout-btn{
+      background:#d6336c;
+      border:none;
+      padding:12px 20px;
+      font-size:16px;
+      border-radius:10px;
+      color:#fff;
+      font-weight:600;
+      transition:.25s;
+    }
+    .checkout-btn:hover{background:#b02a52}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        🌸My Flower Shop
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="Bouquets.html">Bouquets</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="card.html">Cart</a></li>
+           <li class="nav-item"><a class="nav-link text-white" href="contact.html">contact as</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container py-5">
+    <h2 class="head">🛒 My Cart</h2>
+    <div class="cart-card p-3 d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-3">
+        <img src="asserts/img/rose.jpg" alt="Rose Bouquet" class="cart-img">
+        <div>
+          <h6 class="mb-1">Rose Bouquet</h6>
+          <div class="price">₹799</div>
+        </div>
+      </div>
+      <a href="Bouquets.html" class="btn btn-outline-danger btn-sm">Remove</a>
+    </div>
+    <div class="cart-card p-3 d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-3">
+        <img src="asserts/img/Tulip Bouquet.jpg" alt="Tulip Bouquet" class="cart-img">
+        <div>
+          <h6 class="mb-1">Tulip Bouquet</h6>
+          <div class="price">₹999</div>
+        </div>
+      </div>
+      <a href="Bouquets.html" class="btn btn-outline-danger btn-sm">Remove</a>
+    </div>
+    <div class="cart-card p-4">
+      <h5>Order Summary</h5>
+      <hr>
+      <div class="d-flex justify-content-between mb-2">
+        <span>Subtotal</span>
+        <span>₹1,798</span>
+      </div>
+      <div class="d-flex justify-content-between mb-2">
+        <span>Delivery</span>
+        <span>₹50</span>
+      </div>
+      <div class="d-flex justify-content-between fw-bold">
+        <span>Total</span>
+        <span>₹1,848</span>
+      </div>
+      <div class="mt-4 text-center">
+        <button class="checkout-btn w-100">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

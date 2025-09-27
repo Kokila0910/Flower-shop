@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower & Bouquet Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+    .navbar {
+      background: rgb(107, 108, 108);
+    }
+    .navbar-brand {
+      margin: 10px;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #222 !important;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background-attachment: fixed;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      z-index: 1;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+    }
+
+    .card {
+      border: none;
+      overflow: hidden;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card img {
+      transition: transform 0.4s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .card:hover img {
+      transform: scale(1.1);
+    }
+    .card-title {
+      font-weight: 600;
+      color: #ff4e50;
+    }
+    .btn-custom {
+      background: rgb(107, 108, 108);
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      padding: 8px 20px;
+      transition: transform 0.3s ease;
+    }
+    .btn-custom:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    h2.section-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      color: #ff4e50;
+      position: relative;
+    }
+    h2.section-title::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #f9d423;
+      margin: 10px auto 0;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: rgb(107, 108, 108);
+      color: #fff;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        🌸My Flower Shop
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="Bouquets.html">Bouquets</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="card.html">Cart</a></li>
+         <li class="nav-item"><a class="nav-link text-white" href="contact.html">contact as</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero">
+    <h1>Fresh Flowers & Beautiful Bouquets 🌸</h1>
+  </section>
+  <section class="container py-5">
+    <h2 class="section-title text-center">Our Bouquets</h2>
+    <div class="row g-4">      
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="asserts/img/redrose.jpg" class="card-img-top" alt="Rose Bouquet">
+          <div class="card-body text-center">
+            <h5 class="card-title">Red Rose Bouquet</h5>
+            <p class="card-text">₹599</p>
+            <a href="card.html" class="btn btn-custom">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="asserts/img/Tulip Bouquet.jpg" height="280" class="card-img-top" alt="Tulip Bouquet">
+          <div class="card-body text-center">
+            <h5 class="card-title">Tulip Bouquet</h5>
+            <p class="card-text">₹799</p>
+            <a href="card.html" class="btn btn-custom">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="asserts/img/pr.webp" height="280" class="card-img-top" alt="Mixed Bouquet">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mixed Bouquet</h5>
+            <p class="card-text">₹999</p>
+            <a href="card.html" class="btn btn-custom">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-white text-center py-3">
+    <p>&copy; 2025 My Flower Shop | Kokila S</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
